@@ -44,7 +44,8 @@ qa_chain = load_chain()
 
 # Chat UI
 query = st.text_input("🔍 प्रश्न दर्ज करें:")
-if st.button("उत्तर दें") and query:
+#if st.button("उत्तर दें") and query:
+if query:
     with st.spinner("सोच रहे हैं..."):
         result = qa_chain.run(query)
         st.markdown("### 🧠 उत्तर:")
