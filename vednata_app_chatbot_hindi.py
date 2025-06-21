@@ -1,11 +1,12 @@
 import streamlit as st
-from langchain.vectorstores import FAISS
-from langchain.embeddings import OpenAIEmbeddings
+from langchain_community.vectorstores import FAISS
+from langchain_community.embeddings import OpenAIEmbeddings
 from langchain.chat_models import ChatOpenAI
 from langchain.chains import RetrievalQA
 from langchain.prompts import PromptTemplate
 import os
-
+#URL used in Steamlit clound
+#https://vedantachatbothindi.streamlit.app/
 # Load OpenAI key from secrets
 openai_key = st.secrets["OPENAI_API_KEY"]
 
