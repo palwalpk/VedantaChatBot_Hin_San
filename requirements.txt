@@ -1,0 +1,8 @@
+streamlit
+langchain
+openai
+faiss-cpu
+pymupdf
+tiktoken
+pytesseract
+Pillow
